@@ -1,0 +1,96 @@
+body {
+  background-color: hsl(30, 38%, 92%);
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 18px;
+}
+.title {
+  font-family: "Fraunces", serif;
+  font-style: initial;
+  font-weight: 700;
+  color: black;
+  font-size: 36px;
+}
+.span {
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+}
+.item1 {
+  justify-content: start;
+}
+.item2 {
+  justify-content: start;
+}
+div > span {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: hsl(158, 36%, 37%);
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  padding: 10px;
+  width: 90%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.button:hover {
+  background-color: hsl(212, 21%, 14%);
+  cursor: pointer;
+}
+img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+@media (min-width: 375px) {
+  #image {
+    content: url(./image-product-desktop.jpg);
+    height: 500px;
+    width: -webkit-fill-available;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    background-color: hsl(0, 0%, 100%);
+    grid-gap: 20px 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 600px;
+    margin: auto;
+  }
+}
+@media (max-width: 1440px) {
+  #image {
+    content: url(./image-product-mobile.jpg);
+    height: 200px;
+    padding: none;
+    width: -webkit-fill-available;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+    background-color: hsl(0, 0%, 100%);
+    grid-gap: 20px 20px;
+    width: 300px;
+  }
+  .test {
+    padding: 30px;
+  }
+}
